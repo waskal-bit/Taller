@@ -1,0 +1,243 @@
+```css
+/* 1. Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    margin: 0; /* Margen */
+    padding: 0;
+    background-color: #E7E8EA; /* Fondo gris */
+    color: #3C3C3C; /* Color del texto principal */
+}
+
+/* 2. Encabezado (Header) */
+header {
+    background-color: #0F0B4C; /* Azul oscuro */
+    text-align: left;
+    padding: 30px 50px;
+    border-bottom: 5px solid #FC1707; /* Línea roja */
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff; /* Texto blanco */
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 3. Menú de navegación */
+nav {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 0;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block; /* Pone los elementos en fila */
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #0F0B4C;
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold;
+    padding: 17px 25px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0F0B4C;
+    color: #ffffff;
+}
+
+/* 4. Contenedor principal */
+.contenedor {
+    display: flex; /* Activa el modo flex */
+    flex-wrap: wrap; /* Adaptabilidad */
+    gap: 25px;
+    padding: 35px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* 5. Sección principal (columna ancha) */
+.contenedor section {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 5px solid #0F0B4C;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+}
+
+.contenedor section h2 {
+    color: #0F0B4C;
+    border-bottom: 2px solid #D0105D;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 27px;
+}
+
+/* 6. Aside (columna angosta, contenido secundario) */
+.contenedor aside {
+    flex: 1;
+    background-color: #DCDDE0;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #0F0B4C;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor aside h2 {
+    color: #0F0B4C;
+    border-bottom: 2px solid #707070;
+    padding-bottom: 8px;
+}
+
+/* 7. Artículos dentro de la sección */
+article {
+    margin-bottom: 25px;
+    padding: 22px;
+    background-color: #F8F8F8;
+    border: 1px solid #D1D1D1;
+    border-left: 5px solid #FC1707;
+    border-radius: 7px;
+}
+
+article h3 {
+    color: #0F0B4C;
+    margin-top: 0;
+    font-size: 21px;
+}
+
+blockquote {
+    background-color: #EDEDED;
+    border-left: 4px solid #FC1707;
+    margin: 18px 0;
+    padding: 12px 18px;
+    font-style: italic;
+    color: #5A5A5A;
+}
+
+mark {
+    background-color: #FC1707;
+    color: #ffffff;
+    padding: 3px 7px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Estilos para el glosario */
+dl dt {
+    font-weight: bold;
+    color: #0F0B4C;
+    margin-top: 12px;
+}
+
+dl dd {
+    margin-left: 0;
+    color: #5A5A5A;
+    margin-bottom: 9px;
+}
+
+/* 8. Imágenes: que nunca se salgan de su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    border: 1px solid #C7C7C7;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+/* 9. Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #C7C7C7;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    background-color: #0F0B4C;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+tr:hover {
+    background-color: #E5E5E5;
+}
+
+/* 10. Formulario de contacto */
+form label {
+    font-weight: bold;
+    color: #0F0B4C;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 11px;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 5px;
+    border: 1px solid #A5A5A5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #0F0B4C;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #FC1707;
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #A50B04;
+}
+
+/* 11. Pie de página (footer) */
+footer {
+    background-color: #0F0B4C;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-top: 5px solid #FC1707;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FC1707;
+}
+```
